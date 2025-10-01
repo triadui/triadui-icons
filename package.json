@@ -1,0 +1,90 @@
+{
+  "name": "@triadui/icons",
+  "version": "1.0.0-beta.1",
+  "description": "Material Design 3 icons library for React with TypeScript support and icon browser",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./fonts": "./fonts/material-symbols.css"
+  },
+  "files": [
+    "dist",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --project tsconfig.build.json && vite build",
+    "build:lib": "tsc --project tsconfig.build.json && vite build --config vite.config.ts",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "download-fonts": "node scripts/download-fonts.js",
+    "prepublishOnly": "npm run build:lib"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.3",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.4.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.44.0",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
+  },
+  "keywords": [
+    "react",
+    "icons",
+    "material-symbols",
+    "material-design",
+    "typescript",
+    "components",
+    "ui",
+    "material-3",
+    "m3",
+    "variable-fonts",
+    "icon-library",
+    "font-icons",
+    "tailwindcss",
+    "icon-browser",
+    "material-ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/mui-iii.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/mui-iii/issues"
+  },
+  "homepage": "https://github.com/your-username/mui-iii#readme",
+  "author": {
+    "name": "MUI-III Team",
+    "email": "contact@mui-iii.dev"
+  },
+  "license": "MIT"
+}
