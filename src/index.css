@@ -1,0 +1,104 @@
+/* Import Material Symbols Font */
+@import url('../fonts/material-symbols.css');
+
+:root {
+  /* Material Design 3 System Colors */
+  --m3-sys-color-primary: #6750A4;
+  --m3-sys-color-on-primary: #FFFFFF;
+  --m3-sys-color-primary-container: #EADDFF;
+  --m3-sys-color-on-primary-container: #21005D;
+
+  --m3-sys-color-secondary: #625B71;
+  --m3-sys-color-on-secondary: #FFFFFF;
+  --m3-sys-color-secondary-container: #E8DEF8;
+  --m3-sys-color-on-secondary-container: #1D192B;
+
+  --m3-sys-color-tertiary: #7D5260;
+  --m3-sys-color-on-tertiary: #FFFFFF;
+  --m3-sys-color-tertiary-container: #FFD8E4;
+  --m3-sys-color-on-tertiary-container: #31111D;
+
+  --m3-sys-color-error: #B3261E;
+  --m3-sys-color-on-error: #FFFFFF;
+  --m3-sys-color-error-container: #F9DEDC;
+  --m3-sys-color-on-error-container: #410E0B;
+
+  --m3-sys-color-background: #FFFBFE;
+  --m3-sys-color-on-background: #1C1B1F;
+
+  --m3-sys-color-surface: #FFFBFE;
+  --m3-sys-color-on-surface: #1C1B1F;
+  --m3-sys-color-surface-variant: #E7E0EC;
+  --m3-sys-color-on-surface-variant: #49454F;
+
+  --m3-sys-color-outline: #79747E;
+  --m3-sys-color-outline-variant: #CAC4D0;
+  --m3-sys-color-inverse-on-surface: #F4EFF4;
+  --m3-sys-color-inverse-surface: #313033;
+  --m3-sys-color-inverse-primary: #D0BCFF;
+  --m3-sys-color-shadow: #000000;
+  --m3-sys-color-surface-tint: var(--m3-sys-color-primary);
+
+  /* Surface container colors for cards */
+  --m3-sys-color-surface-container-lowest: #FFFFFF;
+  --m3-sys-color-surface-container-low: #F7F2FA;
+  --m3-sys-color-surface-container: #F3EDF7;
+  --m3-sys-color-surface-container-high: #ECE6F0;
+  --m3-sys-color-surface-container-highest: #E6E0E9;
+
+  /* Shape corner tokens */
+  --m3-sys-shape-corner-none: 0px;
+  --m3-sys-shape-corner-extra-small: 4px;
+  --m3-sys-shape-corner-small: 8px;
+  --m3-sys-shape-corner-medium: 12px;
+  --m3-sys-shape-corner-large: 16px;
+  --m3-sys-shape-corner-extra-large: 28px;
+  --m3-sys-shape-corner-full: 9999px;
+  --m3-sys-shape-corner-default: 8px;
+
+  /* Typography scale */
+  --m3-sys-typescale-label-large-font: 500 14px/20px system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+  /* Elevation tokens */
+  --m3-sys-elevation-level0: none;
+  --m3-sys-elevation-level1: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --m3-sys-elevation-level2: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  --m3-sys-elevation-level3: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+  --m3-sys-elevation-level4: 0px 2px 3px 0px rgba(0, 0, 0, 0.30), 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+  --m3-sys-elevation-level5: 0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+
+  /* State layer tokens */
+  --m3-sys-overlay-hover: rgba(0,0,0,0.04);
+  --m3-sys-overlay-focus: rgba(0,0,0,0.08);
+  --m3-sys-overlay-pressed: rgba(0,0,0,0.12);
+  --m3-sys-overlay-dragged: rgba(0,0,0,0.16);
+
+  /* Spacing tokens */
+  --m3-spacing-0: 0px;
+  --m3-spacing-1: 4px;
+  --m3-spacing-2: 8px;
+  --m3-spacing-3: 12px;
+  --m3-spacing-4: 16px;
+  --m3-spacing-5: 20px;
+  --m3-spacing-6: 24px;
+  --m3-spacing-8: 32px;
+  --m3-spacing-10: 40px;
+  --m3-spacing-12: 48px;
+}
+
+/* Base styles */
+html {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--m3-sys-color-background);
+  color: var(--m3-sys-color-on-background);
+}
+
+* {
+  box-sizing: border-box;
+}
