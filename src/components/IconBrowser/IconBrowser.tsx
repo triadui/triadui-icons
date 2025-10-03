@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Icon } from '../Icon';
+import { Icon } from '@triadui/icons-core';
 import { Input } from '../UI';
 import { ICONS, searchIcons, getCategories, getIconsByCategory } from '../../icons';
 

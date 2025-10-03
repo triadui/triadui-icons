@@ -1,6 +1,6 @@
-# Contributing to MUI-III
+# Contributing to TriadUI Icons
 
-Thank you for your interest in contributing to MUI-III! We welcome contributions from the community.
+Thank you for your interest in contributing to TriadUI Icons! We welcome contributions from the community.
 
 ## Ways to Contribute
 

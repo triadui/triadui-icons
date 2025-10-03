@@ -1,7 +1,7 @@
 {
   "name": "@triadui/icons",
   "version": "1.0.0-beta.1",
-  "description": "Material Design 3 icons library for React with TypeScript support and icon browser",
+  "description": "TriadUI Icons - Material Design 3 icons library for React with TypeScript support. Part of the upcoming TriadUI component library.",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -55,6 +55,7 @@
     "vite": "^7.1.7"
   },
   "dependencies": {
+    "@triadui/icons-core": "file:./packages/core/icons",
     "clsx": "^2.1.1"
   },
   "keywords": [

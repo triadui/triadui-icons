@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Icon } from './Icon';
+import { Icon } from '@triadui/icons-core';
 
 interface GetStartedProps {
   onGetStarted: () => void;
@@ -25,7 +25,7 @@ export const GetStarted: React.FC<GetStartedProps> = ({ onGetStarted }) => {
           marginBottom: '16px',
           textShadow: '0 2px 4px rgba(0,0,0,0.3)'
         }}>
-          @triadui/icons
+          TriadUI Icons
         </h1>
         <p style={{
           fontSize: '1.25rem',
@@ -209,7 +209,7 @@ export const GetStarted: React.FC<GetStartedProps> = ({ onGetStarted }) => {
             marginBottom: '16px',
             color: '#1E293B'
           }}>
-            Beautiful UI Examples
+                      Beautiful Material Design 3 icons for React applications. Part of the TriadUI component ecosystem.
           </h2>
           <p style={{
             fontSize: '1.125rem',

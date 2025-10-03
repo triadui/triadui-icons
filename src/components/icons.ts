@@ -510,7 +510,8 @@ export const ICONS = {
   },
 
   // Device & Hardware
-  device: {
+  device:
+   {
     smartphone: 'smartphone',
     phone_android: 'phone_android',
     phone_iphone: 'phone_iphone',

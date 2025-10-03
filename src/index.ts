@@ -1,16 +1,41 @@
-// Core Icon Component
-export { Icon } from './components/Icon';
-export type { IconProps, IconSize, IconColor, IconStyle } from './components/Icon';
+/**
+ * @triadui/icons - TriadUI Icons Library
+ * 
+ * Material Design 3 icons for React applications.
+ * Part of the upcoming TriadUI component library.
+ * 
+ * Features:
+ * - 2,500+ Material Design icons
+ * - Variable font technology for customization
+ * - TypeScript support
+ * - Tree-shakable
+ * - Lightweight and performant
+ * 
+ * @example
+ * ```tsx
+ * import { Icon } from '@triadui/icons';
+ * 
+ * // Basic usage
+ * <Icon name="home" />
+ * 
+ * // Advanced usage
+ * <Icon 
+ *   name="favorite" 
+ *   variant="rounded" 
+ *   fill={1} 
+ *   weight={500} 
+ *   color="primary" 
+ *   fontSize="large" 
+ * />
+ * ```
+ */
 
-// Icon Browser Component
-export { IconBrowser as MaterialIconBrowser } from './components/IconBrowser';
+// Re-export everything from the core package
+export * from '@triadui/icons-core';
 
-// Icon Data and Utils
+// Export icon browser for development/documentation
+export { IconBrowser } from './components/IconBrowser';
+
+// Export icon data for browser functionality
 export { ICONS, getAllIconNames, searchIcons } from './icons';
 export type { IconName } from './icons';
-
-// Legacy exports for backward compatibility
-export { MaterialIconBrowser as IconBrowser } from './components/IconBrowser';
-
-// Re-export UI components for advanced users
-export * from './components/UI';

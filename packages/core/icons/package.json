@@ -1,7 +1,7 @@
 {
-  "name": "@triadui/icons",
+  "name": "@triadui/icons-core",
   "version": "0.1.0",
-  "description": "Core Material Design 3 icons component for React with TypeScript support",
+  "description": "Core Material Design 3 icons component for React with TypeScript support - Part of TriadUI library",
   "type": "module",
   "main": "dist/triadui-icons-core.umd.js",
   "module": "dist/triadui-icons-core.es.js",
