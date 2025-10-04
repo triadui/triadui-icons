@@ -1,5 +1,5 @@
 {
-  "name": "@triadui/icons",
+  "name": "triadui-icons-monorepo",
   "version": "1.0.0-beta.1",
   "description": "TriadUI Icons - Material Design 3 icons library for React with TypeScript support. Part of the upcoming TriadUI component library.",
   "type": "module",
