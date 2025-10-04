@@ -1,8 +1,8 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { Icon } from '@triadui/icons-core';
-import { Input, Button } from '../UI';
+import { Icon } from '@triadui/icons';
+import { Input } from '../UI';
 import { ICONS, searchIcons } from '../../icons';
-import type { IconColor, IconSize, IconStyle } from '@triadui/icons-core';
+import type { IconColor, IconSize, IconStyle } from '@triadui/icons';
 
 interface MaterialIconBrowserProps {
   className?: string;
@@ -215,3 +215,6 @@ export const MaterialIconBrowser: React.FC<MaterialIconBrowserProps> = ({ classN
     </div>
   );
 };
+
+// Export as SimpleBrowser for compatibility
+export const SimpleBrowser = MaterialIconBrowser;
