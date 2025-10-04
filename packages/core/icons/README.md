@@ -1,8 +1,7 @@
-# @triadui/icons-core
+# @triadui/icons
 
-[![npm version](https://badge.fury.io/js/@triadui/icons-core.svg)](https://badge.fury.io/js/@triadui/icons-core)
+[![npm version](https://badge.fury.io/js/@triadui/icons.svg)](https://badge.fury.io/js/@triadui/icons)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Core Material Design 3 icon component for React applications with TypeScript support.
 
@@ -10,19 +9,19 @@ Core Material Design 3 icon component for React applications with TypeScript sup
 
 ```bash
 # npm
-npm install @triadui/icons-core
+npm install @triadui/icons
 
 # yarn
-yarn add @triadui/icons-core
+yarn add @triadui/icons
 
 # pnpm
-pnpm add @triadui/icons-core
+pnpm add @triadui/icons
 ```
 
 ## 🚀 Usage
 
 ```tsx
-import { Icon } from '@triadui/icons-core';
+import { Icon } from '@triadui/icons';
 
 function App() {
   return (
@@ -54,4 +53,4 @@ function App() {
 
 ## 📄 License
 
-MIT © [MUI-III Team](mailto:contact@mui-iii.dev)
+Part of Triad UI design system
