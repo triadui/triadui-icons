@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: 'TriadUIIconsCore',
-      fileName: (format: string) => `triadui-icons-core.${format}.js`
+      name: 'TriadUIIcons',
+      fileName: (format: string) => `triadui-icons.${format}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
