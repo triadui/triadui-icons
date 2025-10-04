@@ -21,8 +21,9 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc --project tsconfig.build.json && vite build",
-    "build:lib": "tsc --project tsconfig.build.json && vite build --config vite.config.ts",
+    "build": "vite build",
+    "build:lib": "tsc --project tsconfig.build.json && vite build --config vite.config.lib.ts",
+    "build:app": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "download-fonts": "node scripts/download-fonts.js",

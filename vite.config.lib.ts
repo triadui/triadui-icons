@@ -16,5 +16,21 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: ['@triadui/icons']
+  },
+  build: {
+    lib: {
+      entry: 'src/index.ts',
+      name: 'MuiIII',
+      fileName: (format: string) => `mui-iii.${format}.js`
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM'
+        }
+      }
+    }
   }
 })
