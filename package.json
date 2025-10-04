@@ -1,5 +1,5 @@
 {
-  "name": "@triadui/icons",
+  "name": "triadui-icons-monorepo",
   "version": "1.0.0-beta.1",
   "description": "TriadUI Icons - Material Design 3 icons library for React with TypeScript support. Part of the upcoming TriadUI component library.",
   "type": "module",
@@ -40,6 +40,7 @@
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^24.6.2",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.3",
@@ -55,7 +56,7 @@
     "vite": "^7.1.7"
   },
   "dependencies": {
-    "@triadui/icons-core": "file:./packages/core/icons",
+    "@triadui/icons": "file:./packages/core/icons",
     "clsx": "^2.1.1"
   },
   "keywords": [

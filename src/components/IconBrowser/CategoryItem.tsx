@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn } from '../../utils/cn';
-import { Icon } from '@triadui/icons-core';
+import { Icon } from '@triadui/icons';
 
 interface CategoryItemProps {
   id: string;

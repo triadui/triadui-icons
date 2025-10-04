@@ -1,20 +1,23 @@
 {
-  "name": "@triadui/icons-core",
-  "version": "0.1.0",
-  "description": "Core Material Design 3 icons component for React with TypeScript support - Part of TriadUI library",
+  "name": "@triadui/icons",
+  "version": "0.1.2",
+  "description": "Core Material Design 3 icon component for React applications with TypeScript and JavaScript support. Works with Next.js, Vite, CRA, and more. Part of Triad UI.",
   "type": "module",
-  "main": "dist/triadui-icons-core.umd.js",
-  "module": "dist/triadui-icons-core.es.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/triadui-icons.cjs",
+  "module": "./dist/triadui-icons.mjs",
+  "types": "./src/index.ts",
   "exports": {
     ".": {
-      "import": "./dist/triadui-icons-core.es.js",
-      "require": "./dist/triadui-icons-core.umd.js",
-      "types": "./dist/index.d.ts"
-    }
+      "types": "./src/index.ts",
+      "import": "./src/index.ts",
+      "require": "./dist/triadui-icons.cjs",
+      "default": "./src/index.ts"
+    },
+    "./styles": "./src/styles.css"
   },
   "files": [
     "dist",
+    "src",
     "README.md",
     "LICENSE"
   ],
@@ -58,21 +61,28 @@
     "material-symbols",
     "material-design",
     "typescript",
+    "javascript",
+    "nextjs",
+    "next.js",
+    "vite",
     "components",
     "ui",
     "material-3",
     "m3",
     "variable-fonts",
     "icon-library",
-    "font-icons"
+    "font-icons",
+    "esm",
+    "cjs",
+    "commonjs"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/mui-iii.git",
+    "url": "git+https://github.com/triadui/triadui-icons.git",
     "directory": "packages/core/icons"
   },
   "bugs": {
-    "url": "https://github.com/your-username/mui-iii/issues"
+    "url": "https://github.com/triadui/triadui-icons/issues"
   },
-  "homepage": "https://github.com/your-username/mui-iii#readme"
+  "homepage": "https://github.com/triadui/triadui-icons#readme"
 }

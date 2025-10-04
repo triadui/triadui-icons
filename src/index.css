@@ -30,6 +30,16 @@
   --m3-sys-color-on-surface: #1C1B1F;
   --m3-sys-color-surface-variant: #E7E0EC;
   --m3-sys-color-on-surface-variant: #49454F;
+  --m3-sys-color-surface-container: #F3EDF7;
+  --m3-sys-color-surface-container-low: #F7F2FA;
+  --m3-sys-color-surface-container-high: #ECE6F0;
+  --m3-sys-color-surface-container-highest: #E6E0E9;
+  --m3-sys-color-surface-container-lowest: #FFFBFE;
+
+  --m3-sys-color-outline: #79747E;
+  --m3-sys-color-outline-variant: #CAC4D0;
+  --m3-sys-color-surface-variant: #E7E0EC;
+  --m3-sys-color-on-surface-variant: #49454F;
 
   --m3-sys-color-outline: #79747E;
   --m3-sys-color-outline-variant: #CAC4D0;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, IconProps } from '@triadui/icons-core';
+import { Icon, IconProps } from '@triadui/icons';
 
 const App: React.FC = () => {
   // Test basic import
@@ -17,7 +17,7 @@ const App: React.FC = () => {
 
   return (
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1>@triadui/icons-core Test Suite</h1>
+      <h1>@triadui/icons Test Suite</h1>
 
       <section style={{ marginBottom: '40px' }}>
         <h2>Basic Icon Test</h2>
