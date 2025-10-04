@@ -1,7 +1,7 @@
 import React from 'react';
 import { cn } from '../../utils/cn';
-import { Icon } from '@triadui/icons-core';
-import type { IconColor, IconSize, IconStyle } from '@triadui/icons-core';
+import { Icon } from '@triadui/icons';
+import type { IconColor, IconSize, IconStyle } from '@triadui/icons';
 
 interface ControlPanelProps {
   selectedColor: IconColor;
