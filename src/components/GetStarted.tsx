@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Icon } from '@triadui/icons-core';
+import { Icon } from '@triadui/icons';
 
 interface GetStartedProps {
   onGetStarted: () => void;
@@ -332,11 +332,11 @@ export const GetStarted: React.FC<GetStartedProps> = ({ onGetStarted }) => {
                 boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
               }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <Icon name="check_circle" color="success" />
+                  <Icon name="check_circle" color="primary" />
                   <span style={{ color: '#1E293B', fontWeight: '500' }}>Task completed</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <Icon name="warning" color="warning" />
+                  <Icon name="warning" color="error" />
                   <span style={{ color: '#64748B' }}>Attention needed</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
