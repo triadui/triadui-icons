@@ -1,5 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "installCommand": "npm ci --prefer-offline"
+  "installCommand": "npm install --prefer-offline"
 }
