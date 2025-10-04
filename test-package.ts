@@ -1,5 +1,5 @@
-// Test script to verify @triadui/icons-core package
-import { Icon, IconProps } from '@triadui/icons-core';
+// Test script to verify @triadui/icons package
+import { Icon, IconProps } from '@triadui/icons';
 
 // Test 1: Import works
 console.log('✓ Package imported successfully');
