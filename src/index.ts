@@ -31,11 +31,36 @@
  */
 
 // Re-export everything from the core package
-export * from '@triadui/icons-core';
+export * from '@triadui/icons';
 
 // Export icon browser for development/documentation
 export { IconBrowser } from './components/IconBrowser';
 
 // Export icon data for browser functionality
-export { ICONS, getAllIconNames, searchIcons } from './icons';
-export type { IconName } from './icons';
+export { ICONS } from './icons';
+import { ICONS } from './icons';
+
+// Utility functions for working with icons
+export const getAllIconNames = (): string[] => {
+  const allIcons: string[] = [];
+  Object.values(ICONS).forEach((category) => {
+    if (typeof category === 'object' && category !== null) {
+      allIcons.push(...Object.values(category as Record<string, string>));
+    }
+  });
+  return allIcons;
+};
+
+export const searchIcons = (query: string): string[] => {
+  const lowerQuery = query.toLowerCase();
+  const allIcons = getAllIconNames();
+  return allIcons.filter(icon => 
+    icon.toLowerCase().includes(lowerQuery)
+  );
+};
+
+// Export icon name type
+export type IconName = string;
+
+
+
