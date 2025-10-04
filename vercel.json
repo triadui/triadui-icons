@@ -1,6 +1,5 @@
 {
   "installCommand": "pnpm install --ignore-scripts",
-  "buildCommand": "pnpm run build",
-  "outputDirectory": "./dist",
-  "framework": "vite"
+  "buildCommand": "npm run build --workspace=triadui-icons-monorepo",
+  "outputDirectory": "./dist"
 }

@@ -22,7 +22,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "echo 'Skipping subpackage build in Vercel' && exit 0",
+    "build:only": "tsc --project tsconfig.build.json && vite build",
     "build:lib": "tsc --project tsconfig.build.json && vite build --config vite.config.ts",
     "lint": "eslint .",
     "prepublishOnly": "npm run build:lib"
