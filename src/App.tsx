@@ -53,7 +53,7 @@ function App() {
             paddingBottom: '24px'
           }}>
             <button
-              onClick={() => window.open('https://github.com/Muhammad-Hashim/triadui-icons', '_blank')}
+              onClick={() => window.open('https://github.com/triadui/triadui-icons', '_blank')}
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -77,7 +77,7 @@ function App() {
                 e.currentTarget.style.color = '#8450A4';
               }}
             >
-              <Icon name="inventory_2" fontSize="small" />
+              <Icon name="code" fontSize="small" />
               GitHub
             </button>
             <button
