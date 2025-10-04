@@ -8,6 +8,11 @@
     "declaration": true,
     "declarationMap": true,
     "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@triadui/icons": ["packages/core/icons/src/index.ts"]
+    },
     "noEmit": false,
     "emitDeclarationOnly": true,
     "moduleResolution": "bundler",
@@ -18,7 +23,8 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "packages/core/icons/src/**/*"
   ],
   "exclude": [
     "src/**/*.test.*",
