@@ -16,8 +16,7 @@ TriadUI Icons provides 2,500+ Material Design icons as a lightweight, customizab
 - **TypeScript Ready** - Full TypeScript support with detailed type definitions
 - **Lightweight** - Uses font-based icons for optimal performance
 - **Tree Shakable** - Only bundle what you use
-- **Zero Dependencies** - Minimal runtime dependencies
-- **Four Styles** - Outlined, Filled, Rounded, and Sharp variants
+- **Zero Dependencies** - Minimal run- **Four Styles** - Outlined, Filled, Rounded, and Sharp variants
 
 ## 🚀 Quick Start
 
@@ -96,6 +95,8 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser to acce
 | `grade` | `number` | `0` | Grade variation (-50 to 200) for visual adjustments |
 | `opsz` | `number` | `24` | Optical size (20-48) - represents the icon size |
 | `fontSize` | `"inherit" \| "small" \| "medium" \| "large" \| number` | `"medium"` | Icon size preset or custom pixel value |
+\| "large" \| number` | `"medium"` | Icon size preset or custom pixel value |
+small" \| "medium" \| "large" \| number` | `"medium"` | Icon size preset or custom pixel value |
 | `color` | `"inherit" \| "primary" \| "secondary" \| "action" \| "disabled" \| "error"` | `"inherit"` | Color preset |
 | `className` | `string` | `""` | Additional CSS class names |
 | `style` | `CSSProperties` | `{}` | Inline styles |

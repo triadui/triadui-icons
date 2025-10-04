@@ -4,8 +4,8 @@ Thank you for your interest in contributing to TriadUI Icons! We welcome contrib
 
 ## Ways to Contribute
 
-- 🐛 **Report Bugs**: Found a bug? [Open an issue](https://github.com/yourusername/mui-iii/issues)
-- 💡 **Suggest Features**: Have an idea? [Start a discussion](https://github.com/yourusername/mui-iii/discussions)
+- 🐛 **Report Bugs**: Found a bug? [Open an issue](https://github.com/triadui/triadui-icons/issues)
+- 💡 **Suggest Features**: Have an idea? [Start a discussion](https://github.com/triadui/triadui-icons/discussions)
 - 📝 **Improve Documentation**: Help make our docs better
 - 🛠️ **Code Contributions**: Fix bugs or add features
 
@@ -13,8 +13,8 @@ Thank you for your interest in contributing to TriadUI Icons! We welcome contrib
 
 1. **Fork and Clone**
    ```bash
-   git clone https://github.com/yourusername/mui-iii.git
-   cd mui-iii
+   git clone https://github.com/triadui/triadui-icons.git
+   cd triadui-icons
    ```
 
 2. **Install Dependencies**
@@ -79,6 +79,6 @@ When adding new icon categories or icons:
 
 ## Questions?
 
-Feel free to [start a discussion](https://github.com/yourusername/mui-iii/discussions) or [open an issue](https://github.com/yourusername/mui-iii/issues) with questions.
+Feel free to [start a discussion](https://github.com/triadui/triadui-icons/discussions) or [open an issue](https://github.com/triadui/triadui-icons/issues) with questions.
 
 Thank you for contributing! 🎉
