@@ -17,7 +17,7 @@ TriadUI Icons provides 2,500+ Material Design icons as a lightweight, customizab
 - **Lightweight** - Uses font-based icons for optimal performance
 - **Tree Shakable** - Only bundle what you use
 - **Zero Dependencies** - Minimal runtime dependencies
-- **Three Styles** - Outlined, Rounded, and Sharp variants
+- **Four Styles** - Outlined, Filled, Rounded, and Sharp variants
 
 ## 🚀 Quick Start
 
@@ -37,7 +37,7 @@ pnpm add @triadui/icons
 
 ```tsx
 // In your main CSS file or component
-import '@triadui/icons/fonts';
+import '@triadui/icons/styles';
 ```
 
 2. **Use the Icon component**:
@@ -73,7 +73,7 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser to acce
 ```tsx
 <Icon
   name="icon_name"           // Required: Icon name
-  variant="rounded"          // Optional: "outlined" | "rounded" | "sharp"
+  variant="rounded"          // Optional: "outlined" | "filled" | "rounded" | "sharp"
   fill={0}                   // Optional: 0 (outlined) | 1 (filled)
   weight={400}               // Optional: 100-700
   grade={0}                  // Optional: -50 to 200
@@ -90,12 +90,12 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser to acce
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | `name` | `string` | - | **Required.** Icon name (e.g., "home", "search") |
-| `variant` | `"outlined" \| "rounded" \| "sharp"` | `"rounded"` | Icon style variant |
+| `variant` | `"outlined" \| "filled" \| "rounded" \| "sharp"` | `"rounded"` | Icon style variant |
 | `fill` | `0 \| 1` | `0` | Fill level: 0 for outlined, 1 for filled |
 | `weight` | `number` | `400` | Font weight (100-700) |
 | `grade` | `number` | `0` | Grade variation (-50 to 200) for visual adjustments |
 | `opsz` | `number` | `24` | Optical size (20-48) - represents the icon size |
-| `fontSize` | `"small" \| "medium" \| "large" \| number` | `"medium"` | Icon size preset or custom pixel value |
+| `fontSize` | `"inherit" \| "small" \| "medium" \| "large" \| number` | `"medium"` | Icon size preset or custom pixel value |
 | `color` | `"inherit" \| "primary" \| "secondary" \| "action" \| "disabled" \| "error"` | `"inherit"` | Color preset |
 | `className` | `string` | `""` | Additional CSS class names |
 | `style` | `CSSProperties` | `{}` | Inline styles |
