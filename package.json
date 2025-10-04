@@ -57,7 +57,6 @@
     "vite": "^7.1.7"
   },
   "dependencies": {
-    "@triadui/icons": "file:./packages/core/icons",
     "clsx": "^2.1.1"
   },
   "keywords": [

@@ -11,10 +11,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@triadui/icons': resolve(__dirname, 'packages/core/icons/src/index.ts')
+      '@triadui/icons': resolve(__dirname, 'src/lib-icons/index.ts')
     }
-  },
-  optimizeDeps: {
-    exclude: ['@triadui/icons']
   }
 })
