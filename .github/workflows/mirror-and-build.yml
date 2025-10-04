@@ -1,0 +1,62 @@
+name: Mirror and Build
+
+on:
+  push:
+    branches: [ "**" ]   # Run on all branches
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set git identity
+        run: |
+          git config --global user.name "TeamBot"
+          git config --global user.email "teambot@triadui.com"
+
+      - name: Push to mirror repo
+        run: |
+          git remote add mirror https://x-access-token:${{ secrets.MIRROR_TOKEN }}@github.com/triaduiteam/triadui-icons.git
+          git push mirror ${{ github.ref }} --force
+
+      - name: Leave commit comment on mirror repo
+        uses: peter-evans/commit-comment@v2
+        with:
+          token: ${{ secrets.MIRROR_TOKEN }}
+          repository: triaduiteam/triadui-icons
+          commit: ${{ github.sha }}
+          body: "🚀 Branch `${{ github.ref_name }}` was mirrored and build is starting..."
+
+  build:
+    runs-on: ubuntu-latest
+    needs: mirror
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          repository: triaduiteam/triadui-icons
+          ref: ${{ github.ref }}
+          token: ${{ secrets.MIRROR_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
