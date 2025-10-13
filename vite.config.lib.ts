@@ -8,7 +8,17 @@ const __dirname = dirname(__filename)
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    {
+      name: 'generate-types',
+      async closeBundle() {
+        // This ensures types are generated after the build
+        const { execSync } = await import('child_process');
+        execSync('tsc --emitDeclarationOnly --project tsconfig.build.json', { stdio: 'inherit' });
+      }
+    }
+  ],
   resolve: {
     alias: {
       '@triadui/icons': resolve(__dirname, 'packages/core/icons/src/index.ts')
@@ -19,9 +29,10 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: 'src/index.ts',
-      name: 'MuiIII',
-      fileName: (format: string) => `mui-iii.${format}.js`
+      entry: resolve(__dirname, 'src/index.ts'),
+      name: 'TriadUIIcons',
+      fileName: (format) => `triadui-icons.${format}.js`,
+      formats: ['es', 'cjs']
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
@@ -29,8 +40,12 @@ export default defineConfig({
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM'
-        }
-      }
-    }
+        },
+        exports: 'named'
+      },
+      preserveEntrySignatures: 'strict'
+    },
+    sourcemap: true,
+    emptyOutDir: true
   }
 })
