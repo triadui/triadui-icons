@@ -1,19 +1,19 @@
 {
   "name": "@triadui/icons",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Core Material Design 3 icon component for React applications with TypeScript and JavaScript support. Works with Next.js, Vite, CRA, and more. Part of Triad UI.",
   "type": "module",
   "main": "./dist/triadui-icons.cjs",
   "module": "./dist/triadui-icons.mjs",
-  "types": "./src/index.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./src/index.ts",
-      "import": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/triadui-icons.mjs",
       "require": "./dist/triadui-icons.cjs",
-      "default": "./src/index.ts"
+      "default": "./dist/triadui-icons.mjs"
     },
-    "./styles": "./src/styles.css"
+    "./styles": "./dist/styles.css"
   },
   "files": [
     "dist",
@@ -23,6 +23,7 @@
   ],
   "scripts": {
     "build:only": "tsc --project tsconfig.build.json && vite build",
+    "build": "tsc -p tsconfig.build.json",
     "build:lib": "tsc --project tsconfig.build.json && vite build --config vite.config.ts",
     "lint": "eslint .",
     "prepublishOnly": "npm run build:lib"
@@ -84,5 +85,5 @@
   "bugs": {
     "url": "https://github.com/triadui/triadui-icons/issues"
   },
-  "homepage": "https://github.com/triadui/triadui-icons#readme"
+  "homepage": "https://triad-icon.vercel.app"
 }
