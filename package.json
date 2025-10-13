@@ -3,13 +3,14 @@
   "version": "1.0.0-beta.1",
   "description": "TriadUI Icons - Material Design 3 icons library for React with TypeScript support. Part of the upcoming TriadUI component library.",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/triadui-icons.umd.js",
+  "module": "dist/triadui-icons.es.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/triadui-icons.es.js",
+      "require": "./dist/triadui-icons.umd.js"
     },
     "./fonts": "./fonts/material-symbols.css"
   },
@@ -21,22 +22,15 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:lib": "tsc --project tsconfig.build.json && vite build --config vite.config.lib.ts",
+    "build": "run-s clean build:types build:lib",
+    "build:types": "tsc --emitDeclarationOnly --project tsconfig.build.json",
+    "build:lib": "vite build --config vite.config.lib.ts",
     "build:app": "vite build",
+    "clean": "rimraf dist",
     "lint": "eslint .",
     "preview": "vite preview",
     "download-fonts": "node scripts/download-fonts.js",
-    "prepublishOnly": "npm run build:lib"
-  },
-  "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
-    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
-  },
-  "peerDependenciesMeta": {
-    "react-dom": {
-      "optional": true
-    }
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
@@ -50,11 +44,23 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.4.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.5.6",
+    "rimraf": "^6.0.0",
     "tailwindcss": "^4.1.13",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.44.0",
-    "vite": "^7.1.7"
+    "vite": "^7.1.7",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-dom": {
+      "optional": true
+    }
   },
   "dependencies": {
     "clsx": "^2.1.1"
