@@ -8,11 +8,8 @@
     "declaration": true,
     "declarationMap": true,
     "outDir": "dist",
-    "rootDir": ".",
+    "rootDir": "src",
     "baseUrl": ".",
-    "paths": {
-      "@triadui/icons": ["packages/core/icons/src/index.ts"]
-    },
     "noEmit": false,
     "emitDeclarationOnly": true,
     "moduleResolution": "bundler",
@@ -20,14 +17,21 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
-    "src/**/*",
-    "packages/core/icons/src/**/*"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "packages/core/icons/src/**/*.ts",
+    "packages/core/icons/src/**/*.tsx"
   ],
   "exclude": [
-    "src/**/*.test.*",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "node_modules",
+    "dist",
     "src/**/*.spec.*",
     "**/*.stories.*",
     "src/main.tsx",
